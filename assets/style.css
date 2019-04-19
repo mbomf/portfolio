@@ -1,0 +1,195 @@
+
+
+div {
+    color: black;
+}
+body {
+    background: #F2F2F2;
+}
+
+#header {
+    align-content: center;
+    background: black;
+    width: 100%;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    bottom: 0;
+}
+
+.brand-logo {
+    margin: 10px;
+    top: 15px;
+}
+
+#map-display {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    padding: 2%;
+}
+
+#submit {
+    background: rgb(203, 0, 47);
+    font-size: 25PX;
+    margin: 5px;
+    top: 0;
+}
+
+.slides {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+#createCrawl {
+    color:black;
+}
+
+#city {
+    font-size: 15px;
+}
+
+.how-to-crawl {
+    align-content: center;
+    text-align: center;
+    background: #F2F2F2;
+}
+
+#location-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.btn {
+    background: rgb(255, 0, 89);
+}
+
+
+#crawlers-icon {
+    height: 65px;
+    width: 65px;
+}
+
+#pubs-icon {
+    height: 50px;
+    width: 50px;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+h5 {
+    font-family: 'Merienda', cursive;
+}
+
+p {
+
+    font-family: 'Barlow', sans-serif;
+
+}
+
+span{
+    font-family: 'Barlow', sans-serif;
+}
+
+.material-icons {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+#cityform-Title {
+    color: rgb(255, 0, 89);
+}
+
+#cityform-subTitle {
+    color: teal;
+
+}
+
+/* #map{
+    height: 50%;
+    margin: 100px;
+    padding:20px;
+    position: absolute;
+    top: 670px;
+    left:-30px;
+} */
+
+#costs {
+    float: left;
+    text-align: left;
+    font-size: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#show-tour{
+    background-color: rgb(255, 0, 89);
+}
+
+@media only screen and (min-width: 701px){
+    .m12{
+      width:100%
+    }
+   
+    .m5{
+        width:90%;
+      }
+    .s5{
+    width:90%;
+    }
+
+    h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 15;
+    }
+
+    h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 25;
+
+    }
+
+    h5 {
+    font-size: 15;
+    font-family: 'Merienda', cursive;
+    }
+
+    p {
+    font-size: 10;
+    font-family: 'Barlow', sans-serif;
+    /* other css...    */
+   }
+
+   .hide-on-small-only{
+    display:none;
+  }
+}
+
+#test-div {
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(red, orange 50px);
+    clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+    animation: 4s poly infinite alternate ease-in-out;
+    margin: 10px auto;
+  }
+  
+  @keyframes poly {
+    from {
+      clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
+    }
+  
+    to {
+      clip-path: polygon(50% 30%, 100% 0%, 70% 50%, 100% 100%, 50% 70%, 0% 100%, 30% 50%, 0% 0%);
+    }
+  }
+  

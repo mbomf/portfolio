@@ -1,0 +1,379 @@
+body {
+margin: 0px;
+height: 100vh;
+cursor: none;
+} 
+
+.cursor {
+width:20px;
+height:20px;
+border:2px solid rgb(0, 179, 255);
+border-radius:50%;
+position:absolute;
+transition-duration: 200ms;
+transition-timing-function: ease-out;
+animation: cursorAnim .5s infinite alter;
+z-index: 6;
+}  
+.cursor::after {
+content: “”;
+width:20px;
+height:20px;
+position:absolute;
+border: 8px solid rgb(89, 89, 89);
+border-radius: 50%;
+opacity:1;
+top: -8px;
+left:-8px
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0%;
+    }
+}
+
+.expand {
+   animation: cursorAnim3 .5s forwards;
+   border: px solid rgb(89, 89, 89);
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:after,*:before{
+    box-sizing: inherit;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.open{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+    &:hover{
+        opacity: 0.8;
+    }
+    span{
+        display: block;
+        float: left;
+        clear: both;
+        height: 4px;
+        width: 40px;
+        border-radius: 40px;
+        background-color: rgba(0, 179, 255, 0.687);
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        &:nth-child(1){
+            margin-top: 10px;
+            z-index: 9;
+        }
+        &:nth-child(2){
+            margin-top: 25px;
+        }
+        &:nth-child(3){
+            margin-top: 40px;
+        }
+    }
+}
+.sub-menu{
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        height: 0;
+        width: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        background-color: rgba(0, 179, 255, 0.887);
+        border-radius: 50%;
+        z-index: 18;
+        overflow: hidden;
+        li{
+            display: block;
+            float: right;
+            clear: both;
+            height: auto;
+            margin-right: -160px;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            &:first-child{
+                margin-top: 180px;
+            }
+            &:nth-child(1){
+                -webkit-transition-delay: 0.05s;
+            }
+            &:nth-child(2){
+                -webkit-transition-delay: 0.10s;
+            }
+            &:nth-child(3){
+                -webkit-transition-delay: 0.15s;
+            }
+            &:nth-child(4){
+                -webkit-transition-delay: 0.20s;
+            }
+            &:nth-child(5){
+                -webkit-transition-delay: 0.25s;
+            }
+            a{
+                color: #333;
+                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                width: 100%;
+                display: block;
+                float: left;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .oppenned{
+        .sub-menu{
+            opacity: 1;
+            height: 400px;
+            width: 400px;
+        }
+        span:nth-child(2){
+            overflow: visible;
+        }
+        span:nth-child(1), span:nth-child(3){
+            z-index: 100;
+            transform: rotate(45deg);
+        }
+        span:nth-child(1){
+            transform: rotate(45deg) translateY(12px) translateX(12px);
+        }
+        span:nth-child(2){
+            height: 400px;
+            width: 400px;
+            right: -160px;
+            top: -160px;
+            border-radius: 50%;
+            background-color: rgb(89, 89, 89, 0.5);
+        }
+        span:nth-child(3){          
+            transform: rotate(-45deg) translateY(-10px) translateX(10px);
+        }
+        li{
+            margin-right: 168px;
+        }
+    }
+.button{
+    display: block;
+    float: left;
+    clear: both;
+    padding: 20px 40px;
+    background: #FFF;
+    border-radius: 3px;
+    border: 2px solid rgb(89, 89, 89);
+    overflow: hidden;
+    position: relative;
+    &:after{
+        transition: transform 0.3s ease;
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 400px;
+        transform: rotate(45deg) translateX(-540px) translateY(-100px);
+        background: rgb(89, 89, 89, 0.5);
+        z-index: 1;
+    }
+    &:before{
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        z-index: 2;
+        text-align: center;
+        padding: 20px 40px;
+        transform: translateY(200px);
+    }
+    &:hover{
+        text-decoration: none;
+        &:after{
+            transform: translateX(-300px) translateY(-100px);
+        }
+        &:before{
+            transform: translateY(0);
+        }
+    }
+}
+
+
+$color1: #461467;
+$color2: #ffba57;
+$color3: lighten(#ff7655, 20%);
+$color4: lighten(#00aca0, 10%);
+$color5: #8ed3c9;
+$color6: darken(#fcf5d8, 20%);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #202020;
+	font-size: 62.5%;
+}
+
+// App
+#app {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(76,76,76,1);
+	background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(36%, rgba(43,43,43,0.74)), color-stop(71%, rgba(28,28,28,0.5)), color-stop(100%, rgba(19,19,19,0.29)));
+	background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
+	background: -o-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
+	background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(43,43,43,0.74) 36%, rgba(28,28,28,0.5) 71%, rgba(19,19,19,0.29) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
+	color: #fff;
+}
+
+// Controls
+.controls {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translate(-50%, 0);
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	padding: 0;
+	
+	li {
+		opacity: 0.6;
+		cursor: pointer;
+		overflow: hidden;
+		display: inline-block;
+		height: 30px;
+		margin: 0 10px;
+		padding: 0 30px;
+		border-radius: 10px;
+		font: .8rem/30px Arial, sans-serif;
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		background: #505050;
+		
+		&.active {
+			background: lighten(#505050, 40%);
+		}
+	}
+}
+
+// Page
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #c0c0c0;
+	
+	.center {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		font-size: 3rem;
+		text-align: center;
+	}
+	
+	h1 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		font-size: 2.8rem;
+		text-transform: capitalize;
+	}
+	
+	p {
+		font-family: 'Vollkorn', Georgia, Times, serif;
+		font-size: 1.1rem;
+	}
+	
+	a {
+		transition: color 200ms ease-out;
+		color: darken(rgba(#fff, .8), 40%);
+		
+		&:hover {
+			color: darken(rgba(#fff, .8), 60%);
+		}
+	}
+}
+
+// Active animation
+.active-animation {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+// Page styles
+.fade {
+	background: $color1;
+}
+
+.slide {
+	background: $color2;
+}
+
+.zoom {
+	background: $color3;
+}
+
+.flipX {
+	background: $color4;
+}
+
+.flipY {
+	background: $color5;
+}
+
+.slideUp {
+	background: $color6;
+}

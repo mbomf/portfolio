@@ -1,0 +1,394 @@
+header {
+    background: black;
+    }
+    strong {
+    font-family: Gotham;
+    width: 1008px;
+    font-size: 27.5px;
+    font-weight: 400;
+    color: #2E2E2E;
+    }
+    
+    body {
+    width: 9000px;
+    } 
+    
+    .row1 {
+    position: relative;
+    display: block;
+    }
+    
+    .spacer {
+    width:100px;
+    }
+    
+    .vertical-text {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    }
+    
+    #maincontainer 
+    {  
+    opacity: 1;
+    float: right;
+    padding-top:0;
+    margin:0 auto; 
+    position: relative;
+    height:100%;
+    width: 750px;
+    margin-left: 200px;
+    }
+    
+    #about-me 
+    {   
+    background: transparent;
+    float: right;
+    z-index: 5;
+    border: transparent;
+    margin:auto; 
+    position:fixed;
+    width: auto;
+    }
+
+    #menu-div {
+        bottom: 0px; right: 4px; width: 112px; height: 112px; background: white;
+        position:fixed;
+    
+    }
+    
+    #menu 
+    {   
+    background: rgba(0,167,255,1.00);
+    float: right;
+    z-index: 5;
+    border: transparent;
+    margin:0 0; 
+    position: fixed;
+    }
+    
+    #nav-menu 
+    {   
+    top: 10px;
+    left: 10px;
+    background: transparent;
+    float: right;
+    z-index: 5;
+    padding-bottom:0;
+    margin:auto; 
+    position:fixed;
+    width: auto;
+    }
+    
+    #intro-img {
+    float: center;
+    right:50px;
+    margin: 100px 0px 0px 0px;
+    width: 554px;
+    height: 504px;
+    position:relative;
+    }
+    
+    #intro-img-click:hover {
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    #intro-img-click {
+    background: transparent;
+    }
+    
+    #arrow-img {
+    margin: 50px 100px 0px 0px;
+    width: 500px;
+    transition: all .2s ease-in-out;
+    position:relative;
+    }
+    
+    #arrow-img:hover {
+    margin: 50px 100px 0px 0px;
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    #arrow-container {
+    float: right;
+    padding-top:0;
+    margin:auto 100px; 
+    position:relative;
+    height:100%;
+    width: 1008px;
+    margin-right: 7em;
+    }
+      
+    #welcome-container {
+        float: right;
+        padding-top:0;
+        margin:auto 100px; 
+        position:relative;
+        height:100%;
+        width: 1008px;
+        margin-right: 7em;
+        }
+    
+    .welcome-container {
+    float: right;
+    padding-top:0;
+    margin:0 0; 
+    position:relative;
+    height:100%;
+    width: 1008px;
+    margin-right: 4em;
+    }
+    
+    #welcome-img {
+    top: 20px;
+    left: 20px;
+    float: right;
+    z-index: 1;
+    margin: 0em 0em; 
+    right: 3em; 
+    width: 200px;
+    }
+    
+    #welcome-title {
+    z-index: 4;
+    font-family: Gotham;
+    color: #333333;
+    margin-top:150px;
+    font-size: 66.5px;
+    font-weight: 700;
+    line-height: 90.5px;
+    text-align: right;
+    }
+    #welcome-sub-title {
+    z-index: 4;
+    font-family: Gotham;
+    color: #999999;
+    margin-top:50px;
+    font-size: 66.5px;
+    font-weight: 700;
+    line-height: 90.5px;
+    text-align: right;
+    }
+    
+    #welcome-text {
+    z-index: 3;
+    margin-top: 50px;
+    font-family: Gotham;
+    color: #333333;
+    width: 1008px;
+    font-size: 27.5px;
+    font-weight: 400;
+    line-height: 70.5px;
+    text-align: right;
+    }
+    
+    #intro-txt {
+    float: right;
+    margin: 0 auto;
+    font-size: 200px;
+    font-family: 'Abril Fatface', cursive;
+    }
+    
+    #transition-container {
+    float: right;
+    align-content: center;
+    position: relative;
+    width: 700px;
+    height: 100%;
+    margin-top:255px;
+    }
+    
+    #transition-elements {
+    width: 550;
+    height: 100%;
+    }
+    
+    #pub-crawl-container {
+    float: right;
+    padding-top:0;
+    padding-bottom:0;
+    position:relative;
+    height:100%;
+    width: 600px;
+    margin-top:50px;
+    }
+    
+    #pub-crawl-png{
+    z-index: 0;
+    transition: all .2s ease-in-out; 
+    float:center; 
+    position:absolute; 
+    margin:0 auto;
+    width:504px;
+    height: 550px;
+    }
+    #pub-crawl-png:hover {
+    position:absolute;
+    transform: scale(1.05);
+    }
+    
+    #beer {
+    float:left; 
+    transition: all .2s ease-in-out; 
+    position: relative; 
+    z-index: 5;
+    margin-top:50px;
+    width: 245px;
+    height: auto;
+    right: 100px;
+    padding-bottom: 0;
+    }
+    #beer:hover {
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    #topo-swim-container {
+    float: right;
+    padding-top:0;
+    right: 100px;
+    padding-bottom:0;
+    position:relative;
+    height:auto;
+    width: 600px;
+    margin-top:50px;
+    right: 300px;
+    }
+    
+    #topo-swim-png{
+    z-index: 5;
+    float:center; 
+    transition: all .2s ease-in-out; 
+    position:absolute; 
+    margin:0 auto;
+    width:504px;
+    height: 550px;
+    }
+    #topo-swim-png:hover {
+    position:absolute;
+    transform: scale(1.05);
+    }
+    #topo-swim-bear {
+    float:left; 
+    margin-top:290px;
+    transition: all .2s ease-in-out; 
+    padding-bottom: 0;
+    position: relative; 
+    z-index: 1;
+    width: 367px;
+    height: auto;
+    right: 120px;
+    margin: 200 0 0 0;
+    }
+    
+    #topo-swim-bear:hover {
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    #senso-spazio-container {
+    float: right;
+    padding-top:0;
+    right: 100px;
+    padding-bottom:0;
+    position:relative;
+    height:auto;
+    width: 600px;
+    margin-top:50px;
+    }
+    
+    #senso-spazio-png{
+    transition: all .2s ease-in-out; 
+    z-index: 1;
+    float:center; 
+    position:absolute; 
+    margin:0 auto;
+    width:504px;
+    height: 550px;
+    }
+    #senso-spazio-png:hover {
+    position:absolute;
+    transform: scale(1.05);
+    }
+    
+    
+    #buddha {
+    float:left; 
+    transition: all .2s ease-in-out; 
+    margin-top:110px;
+    padding-bottom: 0;
+    position: relative; 
+    z-index: 5;
+    width: 500px;
+    height: auto;
+    right: 175px;
+    margin: 200 0 0 0;
+    }
+    #buddha:hover {
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    
+    #glass-house-container {
+    float: right;
+    padding-top:0;
+    right: 100px;
+    padding-bottom:0;
+    position:relative;
+    height:auto;
+    width: 600px;
+    margin-top:50px;
+    right:400px;
+    }
+    
+    #glass-house-png{
+    z-index: 2;
+    float:center; 
+    position:absolute; 
+    margin:0 auto;
+    transition: all .2s ease-in-out; 
+    width:504px;
+    height: 550px;
+    right: 135px;
+    }
+    #glass-house-png:hover {
+    position:absolute;
+    transform: scale(1.05);
+    }
+    
+    #glass-house-cup-png {
+    float:left; 
+    position: relative; 
+    z-index: 5;
+    width: 320px;
+    height: auto;
+    transition: all .2s ease-in-out; 
+    right: 130px;
+    padding-bottom: 0;
+    top: 330px;
+    }
+    #glass-house-cup-png:hover {
+    position:relative;
+    transform: scale(1.05);
+    }
+    
+    
+    #end-elements-container {
+    z-index: 0;
+    width: 1850px;
+    right:300px;
+    height: auto;
+    float: right;
+    padding-bottom:0;
+    position: relative;
+    }
+    
+    #end-elements-png {
+    width: auto;
+    height:auto;
+    float: left;
+    }
+    
+    
